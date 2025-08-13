@@ -1,8 +1,8 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-  const contractAddress = "0xc56644b56b5f0be6c718646b00A5D118F0da5Fe1";
-  const recipient = "0xCB26338136faC42B9a1908DE9E6B87226d51C0Ab";
+  const contractAddress = "0x261b08C2227E26bCD781BcA0fcfc7c665D831D11";
+  const recipient = "0xE930572eEA58D85aBDA7FF4C53Ff865a2B94306D";
 
   const amount = "30";
 

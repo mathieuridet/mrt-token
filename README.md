@@ -28,10 +28,10 @@ A custom ERC-20 token built using OpenZeppelin, featuring a fixed total supply a
 ##  Deployment
 
 - **Sepolia deployment address:**  
-  `0x852d201194408673c2bE1db446e835b4d05c101f`
+  `0xc6b1E9aCF8f08EE96F33a2eA420C483153B8F756`
 
 - **Verified source on Etherscan:**  
-  [View MRToken on Sepolia Etherscan](https://sepolia.etherscan.io/address/0x852d201194408673c2bE1db446e835b4d05c101f)
+  [View MRToken on Sepolia Etherscan](https://sepolia.etherscan.io/address/0xc6b1E9aCF8f08EE96F33a2eA420C483153B8F756)
 
 ---
 
@@ -56,7 +56,7 @@ npx hardhat compile
 npx hardhat run scripts/deploy.js --network sepolia
 
 # 6. Optional: Verify on Etherscan
-npx hardhat verify --network sepolia 0xYourContractAddress
+npx hardhat verify --network sepolia 0xYourContractAddress 0xInitialOwnerAddress
 
 # 7. Transfer tokens
 npx hardhat run scripts/transfer.js --network sepolia
