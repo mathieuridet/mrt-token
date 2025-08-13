@@ -1,15 +1,17 @@
 #  MRToken — Custom ERC-20 Token
 
-A custom ERC-20 token built using OpenZeppelin, featuring a fixed total supply and deployed to the Sepolia testnet for demonstration and portfolio purposes.
+A custom ERC-20 token built with OpenZeppelin, featuring ownership controls, EIP-2612 permit signatures (gasless approvals), and a capped max supply. Deployed for testing on the Sepolia testnet.
 
 ---
 
 ##  Features
 
-- Fixed total supply (1,000 MRT with 18 decimals) minted to deployer
-- Built with OpenZeppelin's audited `ERC20` implementation
-- Deployed to Sepolia testnet and source-verified on Etherscan
-- Includes a Hardhat script to perform token transfers
+- ERC-20 with 18 decimals
+- Ownable: restricted mint(...) for the contract owner
+- ERC20Permit (EIP-2612): off-chain approvals via signatures
+- Capped supply: 1,000,000 MRT maximum (ERC20Capped)
+- Initial mint: 1000 MRT minted in the constructor
+- Hardhat scripts for deploy/transfer and Etherscan verification
 
 ---
 
