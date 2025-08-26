@@ -2,18 +2,14 @@ const { ethers } = require("hardhat");
 
 async function main() {
   const [deployer] = await ethers.getSigners();
+  const initialOwner = deployer.address;
 
-  const MRToken = await ethers.getContractFactory("MRToken");
-  const mrToken = await MRToken.deploy(deployer.address);
+  const F = await ethers.getContractFactory("MRToken");
+  const c = await F.deploy(initialOwner);
+  await c.waitForDeployment();
 
-  await mrToken.waitForDeployment();
-
-  console.log("MRToken deployed to:", await mrToken.getAddress());
+  console.log("MRToken:", await c.getAddress());
+  console.log("Owner  :", await c.owner());
 }
 
-main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+main().catch((e) => { console.error(e); process.exit(1); });

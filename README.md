@@ -28,10 +28,10 @@ A custom ERC-20 token built using OpenZeppelin, featuring a fixed total supply a
 ##  Deployment
 
 - **Sepolia deployment address:**  
-  `0xc6b1E9aCF8f08EE96F33a2eA420C483153B8F756`
+  `0x39ac9aB1a125C065c8c9DaaC9b793c288AfaFab6`
 
 - **Verified source on Etherscan:**  
-  [View MRToken on Sepolia Etherscan](https://sepolia.etherscan.io/address/0xc6b1E9aCF8f08EE96F33a2eA420C483153B8F756)
+  [View MRToken on Sepolia Etherscan](https://sepolia.etherscan.io/address/0x39ac9aB1a125C065c8c9DaaC9b793c288AfaFab6)
 
 ---
 
